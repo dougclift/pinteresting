@@ -93,4 +93,6 @@ Rails.application.configure do
     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
   }
 }
+  #this will hopefully fix the bootstrap icons
+  config.assets.precompile += %w( '.woff', '.eot', '.svg', '.ttf' )
 end
